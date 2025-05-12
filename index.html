@@ -1,104 +1,225 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web</title>
+    <title>Entregable Talento Tech</title>
 
-<style>
-    body{
-        background-color: rgb(197, 197, 197);
-    }
+     <address>
+        <br>Nombre: Olga
+        <br>apellido: Muñoz
+        <br>Curso: Talento Tech 2025
+        <br>fecha: Mayo 12 del 2025
+    </address>
+
+    <style type="text/css">
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+            background-color: rgb(255, 255, 253);
+        }
+
+        h1{
+            color: rgb(173, 106, 55);
+            text-align: center;
+        }
+
+        h2{
+            color: rgb(22, 108, 194);
+        }
+        nav ul{
+            list-style: none;
+            text-align: center;
+            font-size: 18px;
+        }    
+
+        nav ul li{
+            display: inline;
+            margin-right: 20px;
+        }
+
+        ul{
+            list-style-type: upper-roman;
+            margin-left: 10px;
+        }
+        
+        table{
+            background-color: rgb(253, 255, 252);
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: 6px solid #ddd;
+        }
+
+        th{
+            background-color: #d4d3d3;
+            text-align: center;
+            border: 2px solid #090808;
+            padding: 50px;
+        }
+
+        td{
+            text-align: center;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: #000000;
+            
+        }
+
+        .container{
+            width: 500px;
+            max-width: 600px;
+            margin: 12px;
+            padding: 45px;
+            background-color: #f6f5f5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
 
 
-    img{
-        width: 250px;
-    }
+        label{
+             display: block;     
+             margin: 10px 0 5px ;                                                                                                                   
+        }
 
-    h2{
-        color: rgb(216, 142, 32);
-        text-align: center;
-    }
+        input, textarea, select{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+        }
 
-    nav{
-        list-style: none;
-        padding: 28px;
-        display: block;
-        text-align: center;
-        font-size: 25px;
-    }
-    
-    p{
-        color: black;
-        text-align: justify;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-    }
+        input[type="submit"]{
+            background-color: rgb(111, 70, 17);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
 
-    li{
-        font-size: 20px;
-    }
+        input[type="submit"]:hover{
+            background-color: #333;
+        }
 
-    table{
-        border-radius: 12px;
-        text-decoration: none;
-    }
-
-
+        footer{
+            text-align: center;
+        }
 
     </style>
 
 </head>
 <body>
-    <h1 style="font-size: 60px; color: brown; text-align: center; font-family: Arial, Helvetica, sans-serif;">Bienvenidos a este sitio web</h1>
 
-    <nav>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Acerca de</a></li>
-    </nav><br><br><hr>
+    <header title="listas y tablas">
+        <h1>Bienvenido al aprendizaje de listas, tablas y formulario.</h1>
+<hr>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#servicio">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section id="listas">
+        <h1>Listas en HTML</h1><br>
+        <h2>listas de redes sociales</h2>
+        <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Twitter</li>           
+        </ul>
+    </section><hr>
 
-    <h2>Conoce de redes sociales</h2>
-    <p>Nuevo texto de prueba sobre html y css</p><br><br>
-    <img src="./imagenes/redes_sociales.png" alt="redes sociales"><br><br>
+    <section id="acerca">
+        <h2>Tabla de redes sociales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Nombre red social</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><img src="./imagenes/facebook.png" alt="facebook" width="60px"></th>
+                    <th>Facebook</th>
+                    <th><p align="justify">Facebook es la principal red social que existe en el mundo. Una red de vínculos virtuales, cuyo principal objetivo es dar un soporte para producir y compartir contenidos</p></th>
+                </tr>
+                <tr>
+                    <th><img src="./imagenes/instagram.png" alt="instagram" width="60px"></th>
+                    <th>Instagram</th>
+                    <th><p align="justify">Instagram es una red social y aplicación móvil gratuita para compartir fotos y videos</p></th>
+                </tr>
+                <tr>
+                    <th><img src="./imagenes/twitter.png" alt="twitter" width="60px"></th>
+                    <th>Twitter</th>
+                    <th><p align="justify">Es una herramienta de mensajería social gratuita que permite a los usuarios mantenerse conectados a través de mensajes de texto </p></th>
+                </tr>
+            </tbody>
+        </table>
+    </section><hr>
 
-    <h2 style="color: blue; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Redes sociales</h2>
-    <ol>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
-    </ol><hr>
-    <br><br>
+<section id="contacto">
+    <h2>Seccion de contacto</h2>
+    <p>Si tiene alguna duda no dudes en contactarnos a: whatsApp, al correo o llenando el siguiente formulario</p>
+        <div class="container">
+    <h1>Formulario de Contacto</h1>
+    <center><form action="#" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" required>
 
-    <h3 style="color: green;">Martes</h3>
-    <h4 style="color: violet;">Miercoles</h4>
-    <h5 style="color: yellow;">Jueves</h5>
-    <h6 style="color: blue;">Viernes</h6>
-<br><br><br><hr>
+        <label for="email">Correo electronico:</label>
+        <input type="email" name="email" id="email" required>
 
-    <table border="2px">
-    <tr>
-        <th>rede social</th>
-        <th>imagen de red social</th>
-    </tr>
-    <tr>
-        <td>Facebook</td>
-        <td><img src="./imagenes/facebook.png" alt="facebook"></td>
-    </tr>
-    <tr>
-        <td>Instagram</td>
-        <td><img src="./imagenes/instagram.png" alt="instagram" srcset=""></td>
-    </tr>
-    <tr>
-        <td>Twiter</td>
-        
-    </tr>
-        
-    </table>
-    
-<br><br>
+        <label for="telefono">Telefono: </label>
+        <input type="tel" name="telefono" id="telefono">
 
-<footer>&copy;Olga</footer>
-    
+        <label for="mensaje">Mensaje: </label>
+        <textarea name="mensaje" id="mensaje" rows="4" required></textarea>
+
+        <label for="pais">Pais:</label>
+        <select name="pais" id="pais" required>
+            <option value="disabled selected" >Seleccione su pais:</option>
+            <optgroup label="Paises de America del sur:"></optgroup>
+            <option value="co">Colombia</option>
+            <option value="ni">Nicaragua</option>
+
+            <optgroup label="Paises de Europa:"></optgroup>
+            <option value="ie">Irlanda</option>
+            <option value="hu">Hungria</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        </form></center>
+    </div><hr>
+    </section>
+<hr>
+<div class="ratio ratio-4x3"></div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9r9NRvbhS_c?si=WdLlbSztuvfRhqfV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<hr>
+
+    <div class="card" style="width: 18rem;">
+  <img src="/imagenes/facebook.png" width="90px" height="90px" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Facebook</h5>
+    <p class="card-text">Facebook es la principal red social que existe en el mundo. Una red de vínculos virtuales, cuyo principal objetivo es dar un soporte para producir y compartir contenidos</p>
+    <a href="#" class="btn btn-primary">Conoce mas en</a>
+  </div>
+</div>
+
+    <section>
+        <footer>
+            <p>&copy; proyecto de: Olga Muñoz -- 2025/mayo/12 -- Pagina web -- Talento Tech</p>
+        </footer>
+    </section>
+
 </body>
 </html>
